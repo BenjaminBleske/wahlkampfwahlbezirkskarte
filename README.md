@@ -1,4 +1,5 @@
 CDU Kommunalwahlkampf 2025 – Wahlbezirksdaten
+https://benjaminbleske.github.io/wahlkampfwahlbezirkskarte/
 
 Dieses Repository enthält GeoJSON-Daten, die die Wahlbezirke sowie zugehörige Informationen (z. B. Bezirk, Bezirksnummer, Kandidaten, Alter, Hauptinteresse, Beruf, Links und Bilddaten) für den Kommunalwahlkampf 2025 abbilden. Die Daten sind so strukturiert, dass sie in gängigen Mapping-Bibliotheken (wie Leaflet) genutzt werden können.
 
