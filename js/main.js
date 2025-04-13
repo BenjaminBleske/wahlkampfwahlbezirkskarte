@@ -59,7 +59,7 @@ function loadGeoJSON() {
           const bildUrl = feature.properties.Bild || "";
 
           let bezirkInfo = `
-            <h3>Wahlbezirk: ${bezirkName} (Nr. ${bezirkNummer})</h3>
+            <h3>${bezirkName} (Nr. ${bezirkNummer})</h3>
             <ul>
               <li><strong>Kandidat:</strong> ${kandidat}</li>
               <li><strong>Alter:</strong> ${alter}</li>
