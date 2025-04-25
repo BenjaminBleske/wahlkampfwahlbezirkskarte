@@ -343,20 +343,24 @@ var customFullscreenControl = L.Control.extend({
   options: {
     position: "topleft",
     className: "leaflet-control fullscreen-button leaflet-bar",
-    html: '<a href="#" class="leaflet-bar-part leaflet-bar-part-single" title="Vollbildmodus"><i class="fas fa-expand"></i></a>',
+    html: '<a href="#" class="leaflet-bar-part leaflet-bar-part-single" title="Zur Wahlkampfkarte"><i class="fas fa-expand"></i></a>',
   },
   onAdd: function (map) {
     var container = L.DomUtil.create("div", this.options.className);
     container.innerHTML = this.options.html;
     L.DomEvent.disableClickPropagation(container);
+
     L.DomEvent.on(container.querySelector('a'), "click", function(e) {
       L.DomEvent.stopPropagation(e);
       L.DomEvent.preventDefault(e);
-      toggleFullscreen();
+      // Statt Fullscreen: Link öffnen
+      window.location.href = 'https://benjaminbleske.github.io/wahlkampfwahlbezirkskarte/';
     });
+
     return container;
   },
 });
+
 
 
   // Karte bei Fenstergrößenänderung anpassen

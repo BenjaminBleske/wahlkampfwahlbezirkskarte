@@ -1,0 +1,51 @@
+<!-- HTML -->
+<div class="responsive-iframe-container">
+  <iframe 
+    src="https://benjaminbleske.github.io/wahlkampfwahlbezirkskarte/" 
+    allow="geolocation" 
+    allowfullscreen
+    title="Wahlkampf Wahlbezirkskarte">
+  </iframe>
+</div>
+
+<div class="direct-link">
+  Bereitet Ihnen die Karte Probleme? Dann nutzen Sie gerne unseren 
+  <a href="https://benjaminbleske.github.io/wahlkampfwahlbezirkskarte/" title="Direktlink zur Karte">Direktlink</a>.
+  Beachten Sie, dass es Unschärfen im Bereich der Grenzen geben kann.
+</div>
+
+<!-- CSS -->
+<style>
+  /* Container für das iframe */
+  .responsive-iframe-container {
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+  }
+  .responsive-iframe-container iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+  }
+  
+  /* Mobile-Anpassung: Karte linksbündig und 90% der Breite */
+  @media screen and (max-width: 768px) {
+    .responsive-iframe-container {
+      width: 90%;
+      height: 60vh;
+      margin: 0; /* linksbündig */
+    }
+  }
+  
+  /* Styling für den Direktlink-Hinweis */
+  .direct-link {
+    font-size: 14px;
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  .direct-link a {
+    color: #007acc; /* Beispiel: blaue Farbe, kann angepasst werden */
+    text-decoration: underline;
+  }
+</style>

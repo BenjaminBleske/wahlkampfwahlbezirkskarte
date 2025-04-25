@@ -9,10 +9,6 @@ GeoJSON-Dateien: Enthalten die geometrischen Grenzen der Wahlbezirke sowie zugeh
 Beispielanwendung: Eine einfache Implementierung mit HTML/JavaScript zur Visualisierung der GeoJSON-Daten auf einer interaktiven Karte.
 Verwendung
 
-Klonen oder herunterladen Sie dieses Repository.
-Öffnen Sie die Beispiel-HTML-Datei in einem Webbrowser, um die interaktive Karte mit den Wahlbezirksdaten zu sehen.
-Passen Sie die Daten und das Kartenlayout nach Bedarf an.
-Lizenz
 
 Dieses Projekt wurde unter der MIT-Lizenz veröffentlicht.
 Dieses Projekt wurde entwickelt von Benjamin Bleske.
@@ -27,3 +23,5 @@ Version	1.0
 Zuletzt aktualisiert	14. Dezember 2023, 11:52 (UTC+01:00)
 Erstellt	14. Dezember 2023, 11:46 (UTC+01:00)
 Koordinatensystem	ETRS 89, UTM-Abbildung, 32 Zone
+
+
