@@ -354,7 +354,7 @@ var customFullscreenControl = L.Control.extend({
       L.DomEvent.stopPropagation(e);
       L.DomEvent.preventDefault(e);
       // Statt Fullscreen: Link öffnen
-      window.location.href = 'https://benjaminbleske.github.io/wahlkampfwahlbezirkskarte/';
+      window.top.location.href = 'https://benjaminbleske.github.io/wahlkampfwahlbezirkskarte/';
     });
 
     return container;
