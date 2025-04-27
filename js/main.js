@@ -43,7 +43,7 @@ function loadGeoJSON() {
           return {
             fillColor: '#52b7c1',
             weight: 1.5,
-            opacity: 0.9,
+            opacity: 0.99,
             color: '#52b7c1',
             fillOpacity: 0.4
           };
