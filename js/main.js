@@ -41,10 +41,10 @@ function loadGeoJSON() {
       L.geoJSON(data, {
         style: function () {
           return {
-            fillColor: 'blue',
+            fillColor: '#52b7c1',
             weight: 1.5,
-            opacity: 1,
-            color: 'black',
+            opacity: 0.4,
+            color: '#52b7c1',
             fillOpacity: 0
           };
         },
