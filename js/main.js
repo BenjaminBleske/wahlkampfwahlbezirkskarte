@@ -45,7 +45,7 @@ function loadGeoJSON() {
             weight: 1.5,
             opacity: 0.9,
             color: '#52b7c1',
-            fillOpacity: 0
+            fillOpacity: 0.4
           };
         },
         onEachFeature: function (feature, layer) {
