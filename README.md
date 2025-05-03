@@ -1,6 +1,9 @@
 CDU Kommunalwahlkampf 2025 – Wahlbezirkskarte für iframe im cms
 https://benjaminbleske.github.io/wahlkampfwahlbezirkskarte/
 
+https://www.cdu-bottrop.de/cdu-wahlkreiskandidaten-2025
+
+
 Dieses Repository enthält GeoJSON-Daten, die die Wahlbezirke sowie zugehörige Informationen (z. B. Bezirk, Bezirksnummer, Kandidaten, Alter, Hauptinteresse, Beruf, Links und Bilddaten) für den Kommunalwahlkampf 2025 abbilden. Die Daten sind so strukturiert, dass sie in gängigen Mapping-Bibliotheken (wie Leaflet) genutzt werden können.
 
 Inhalt
