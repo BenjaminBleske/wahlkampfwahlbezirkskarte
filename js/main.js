@@ -56,7 +56,7 @@ function loadGeoJSON() {
           const hauptinteresse = feature.properties.Hauptinteresse || "Nicht angegeben";
           const beruf = feature.properties.Beruf || "Nicht angegeben";
           const link = feature.properties.Link || "";
-        //  const bildUrl = feature.properties.Bild || "";
+          const bildUrl = feature.properties.Bild || "";
 
           let bezirkInfo = `
             <h3>${bezirkName} (Nr. ${bezirkNummer})</h3>
@@ -66,7 +66,7 @@ function loadGeoJSON() {
               <li><strong>Hauptinteresse:</strong> ${hauptinteresse}</li>
               <li><strong>Beruf:</strong> ${beruf}</li>
               ${link ? `<li><strong>Link:</strong> <a href="${link}" target="_blank">Weitere Informationen</a></li>` : ""}
-             // ${bildUrl ? `<li><img src="${bildUrl}" alt="Bild des Wahlbezirks" width="200" onerror="this.style.display='none';"/></li>` : ""}
+              ${bildUrl ? `<li><img src="${bildUrl}" alt="Bild des Wahlbezirks" width="200" onerror="this.style.display='none';"/></li>` : ""}
             </ul>
           `;
 
