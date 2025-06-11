@@ -72,22 +72,22 @@ function loadGeoJSON() {
   <h3>${bezirkName} (Nr. ${bezirkNummer})</h3>
   ${bildUrl
     ? `<img src="${bildUrl}" alt="Bild des Wahlbezirks" width="200" onerror="this.style.display='none';"/>`
-    : ``}
+    : ""}
   ${kandidat
     ? `<h3><strong>Kandidat:</strong> ${kandidat}</h3>`
-    : ``}
+    : ""}
   ${alter
     ? `<h4><strong>Alter:</strong> ${alter}</h4>`
-    : ``}
+    : ""}
   ${hauptinteresse
     ? `<h4><strong>Hauptinteresse:</strong> ${hauptinteresse}</h4>`
-    : ``}
+    : ""}
   ${beruf
     ? `<h4><strong>Beruf:</strong> ${beruf}</h4>`
-    : ``}
+    : ""}
   ${link
     ? `<p><strong>Link:</strong> <a href="${link}" target="_blank">Weitere Informationen</a></p>`
-    : ``}
+    : ""}
 `;
 
 
