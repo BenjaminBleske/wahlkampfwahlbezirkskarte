@@ -60,8 +60,8 @@ function loadGeoJSON() {
 
           let bezirkInfo = `
             <h3>${bezirkName} (Nr. ${bezirkNummer})</h3>
+            <h4><strong>Kandidat:</strong> ${kandidat}</h4>
             <ul>
-              <li><strong>Kandidat:</strong> ${kandidat}</li>
               <li><strong>Alter:</strong> ${alter}</li>
               <li><strong>Hauptinteresse:</strong> ${hauptinteresse}</li>
               <li><strong>Beruf:</strong> ${beruf}</li>
