@@ -61,7 +61,7 @@ function loadGeoJSON() {
           let bezirkInfo = `
             <h3>${bezirkName} (Nr. ${bezirkNummer})</h3>
             ${bildUrl ? `<img src="${bildUrl}" alt="Bild des Wahlbezirks" width="200" onerror="this.style.display='none';"/>` : ""}
-            <h4><strong>Kandidat:</strong> ${kandidat}</h4>
+            <h3><strong>Kandidat:</strong> ${kandidat}</h3>
             <h4><strong>Alter:</strong> ${alter}</h4>
             <h4><strong>Hauptinteresse:</strong> ${hauptinteresse}</h4>
             <h4><strong>Beruf:</strong> ${beruf}</h4>
