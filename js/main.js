@@ -58,17 +58,38 @@ function loadGeoJSON() {
           const link = feature.properties.Link || "";
           const bildUrl = feature.properties.Bild || "";
 
-          let bezirkInfo = `
-            <h3>${bezirkName} (Nr. ${bezirkNummer})</h3>
-            ${bildUrl ? `<img src="${bildUrl}" alt="Bild des Wahlbezirks" width="200" onerror="this.style.display='none';"/>` : ""}
-            <h3><strong>Kandidat:</strong> ${kandidat}</h3>
-            <h4><strong>Alter:</strong> ${alter}</h4>
-            <h4><strong>Hauptinteresse:</strong> ${hauptinteresse}</h4>
-            <h4><strong>Beruf:</strong> ${beruf}</h4>
-            ${link ? `<strong>Link:</strong> <a href="${link}" target="_blank">Weitere Informationen</a>` : ""}
+          //let bezirkInfo = `
+            //<h3>${bezirkName} (Nr. ${bezirkNummer})</h3>
+            //${bildUrl ? `<img src="${bildUrl}" alt="Bild des Wahlbezirks" width="200" onerror="this.style.display='none';"/>` : ""}
+            //<h3><strong>Kandidat:</strong> ${kandidat}</h3>
+            //<h4><strong>Alter:</strong> ${alter}</h4>
+            //<h4><strong>Hauptinteresse:</strong> ${hauptinteresse}</h4>
+            //<h4><strong>Beruf:</strong> ${beruf}</h4>
+            //${link ? `<strong>Link:</strong> <a href="${link}" target="_blank">Weitere Informationen</a>` : ""}
+          //`;
+            
+            let bezirkInfo = `
+  <h3>${bezirkName} (Nr. ${bezirkNummer})</h3>
+  ${bildUrl
+    ? `<img src="${bildUrl}" alt="Bild des Wahlbezirks" width="200" onerror="this.style.display='none';"/>`
+    : ``}
+  ${kandidat
+    ? `<h3><strong>Kandidat:</strong> ${kandidat}</h3>`
+    : ``}
+  ${alter
+    ? `<h4><strong>Alter:</strong> ${alter}</h4>`
+    : ``}
+  ${hauptinteresse
+    ? `<h4><strong>Hauptinteresse:</strong> ${hauptinteresse}</h4>`
+    : ``}
+  ${beruf
+    ? `<h4><strong>Beruf:</strong> ${beruf}</h4>`
+    : ``}
+  ${link
+    ? `<p><strong>Link:</strong> <a href="${link}" target="_blank">Weitere Informationen</a></p>`
+    : ``}
+`;
 
-          
-          `;
 
           // Klick-Event, um die Info-Box zu aktualisieren
           layer.on('click', function () {
