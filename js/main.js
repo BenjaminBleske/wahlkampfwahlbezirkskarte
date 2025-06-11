@@ -60,16 +60,14 @@ function loadGeoJSON() {
 
           let bezirkInfo = `
             <h3>${bezirkName} (Nr. ${bezirkNummer})</h3>
-            ${bildUrl ? `<li><img src="${bildUrl}" alt="Bild des Wahlbezirks" width="200" onerror="this.style.display='none';"/></li>` : ""}
+            ${bildUrl ? `<img src="${bildUrl}" alt="Bild des Wahlbezirks" width="200" onerror="this.style.display='none';"/>` : ""}
             <h4><strong>Kandidat:</strong> ${kandidat}</h4>
             <h4><strong>Alter:</strong> ${alter}</h4>
-            <ul>
-        
-              <li><strong>Hauptinteresse:</strong> ${hauptinteresse}</li>
-              <li><strong>Beruf:</strong> ${beruf}</li>
-              ${link ? `<li><strong>Link:</strong> <a href="${link}" target="_blank">Weitere Informationen</a></li>` : ""}
-              
-            </ul>
+            <h4><strong>Hauptinteresse:</strong> ${hauptinteresse}</h4>
+            <h4><strong>Beruf:</strong> ${beruf}</h4>
+            ${link ? `<strong>Link:</strong> <a href="${link}" target="_blank">Weitere Informationen</a>` : ""}
+
+          
           `;
 
           // Klick-Event, um die Info-Box zu aktualisieren
