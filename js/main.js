@@ -49,24 +49,17 @@ function loadGeoJSON() {
           };
         },
         onEachFeature: function (feature, layer) {
-          const bezirkName = feature.properties.Bezirk || "Bezirk unbekannt";
-          const bezirkNummer = feature.properties.Bezirk_Nr || "Nummer unbekannt";
-          const kandidat = feature.properties.Kandidat || "Nicht angegeben";
-          const alter = feature.properties.Alter !== null ? feature.properties.Alter : "Nicht angegeben";
-          const hauptinteresse = feature.properties.Hauptinteresse || "Nicht angegeben";
-          const beruf = feature.properties.Beruf || "Nicht angegeben";
+          const bezirkName = feature.properties.Bezirk || "";
+          const bezirkNummer = feature.properties.Bezirk_Nr || "";
+          const kandidat = feature.properties.Kandidat || "";
+          const alter = feature.properties.Alter !== null ? feature.properties.Alter : "";
+          const hauptinteresse = feature.properties.Hauptinteresse || "";
+          const beruf = feature.properties.Beruf || "";
           const link = feature.properties.Link || "";
           const bildUrl = feature.properties.Bild || "";
+          const flyerUrl = feature.properties.Flyer || "";
 
-          //let bezirkInfo = `
-            //<h3>${bezirkName} (Nr. ${bezirkNummer})</h3>
-            //${bildUrl ? `<img src="${bildUrl}" alt="Bild des Wahlbezirks" width="200" onerror="this.style.display='none';"/>` : ""}
-            //<h3><strong>Kandidat:</strong> ${kandidat}</h3>
-            //<h4><strong>Alter:</strong> ${alter}</h4>
-            //<h4><strong>Hauptinteresse:</strong> ${hauptinteresse}</h4>
-            //<h4><strong>Beruf:</strong> ${beruf}</h4>
-            //${link ? `<strong>Link:</strong> <a href="${link}" target="_blank">Weitere Informationen</a>` : ""}
-          //`;
+      
             
             let bezirkInfo = `
   <h3>${bezirkName} (Nr. ${bezirkNummer})</h3>
@@ -76,6 +69,14 @@ function loadGeoJSON() {
   ${kandidat
     ? `<h3><strong>Kandidat:</strong> ${kandidat}</h3>`
     : ""}
+ ${flyerUrl
+  ? `<a href="${flyerUrl}" target="_blank" rel="noopener">
+        <span style="display:inline-block;vertical-align:middle;">
+            📄 Flyer als PDF ansehen
+        </span>
+     </a>`
+  : ""}
+
   ${alter
     ? `<h4><strong>Alter:</strong> ${alter}</h4>`
     : ""}
