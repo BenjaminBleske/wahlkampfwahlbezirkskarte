@@ -6,12 +6,6 @@ https://www.cdu-bottrop.de/cdu-wahlkreiskandidaten-2025
 
 Dieses Repository enthält GeoJSON-Daten, die die Wahlbezirke sowie zugehörige Informationen (z. B. Bezirk, Bezirksnummer, Kandidaten, Alter, Hauptinteresse, Beruf, Links und Bilddaten) für den Kommunalwahlkampf 2025 abbilden. Die Daten sind so strukturiert, dass sie in gängigen Mapping-Bibliotheken (wie Leaflet) genutzt werden können.
 
-Inhalt
-
-GeoJSON-Dateien: Enthalten die geometrischen Grenzen der Wahlbezirke sowie zugehörige Metadaten.
-Beispielanwendung: Eine einfache Implementierung mit HTML/JavaScript zur Visualisierung der GeoJSON-Daten auf einer interaktiven Karte.
-Verwendung
-
 
 Dieses Projekt wurde unter der MIT-Lizenz veröffentlicht.
 Dieses Projekt wurde entwickelt von Benjamin Bleske.

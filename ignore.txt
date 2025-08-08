@@ -1,4 +1,6 @@
-<!-- HTML --><div class="responsive-iframe-container"><iframe allow="geolocation" allowfullscreen="" src="https://benjaminbleske.github.io/wahlkampfwahlbezirkskarte/" title="Wahlkampf Wahlbezirkskarte"></iframe></div><div class="direct-link">Sind Sie am Handy oder am Tablet? Dann nutzen Sie gerne unseren <a href="https://benjaminbleske.github.io/wahlkampfwahlbezirkskarte/" title="Direktlink zur Karte">Direktlink</a>. Beachten Sie, dass es Unschärfen im Bereich der Grenzen geben kann.</div><!-- CSS -->
+<!-- HTML --><div class="responsive-iframe-container"><iframe allow="geolocation" allowfullscreen="" src="https://benjaminbleske.github.io/wahlkampfwahlbezirkskarte/" title="Wahlkampf Wahlbezirkskarte"></iframe></div><div class="direct-link"><p>Mit dem Wahlkreiskandidaten-Informationssystem (WAKIs) finden Sie im Handumdrehen alle relevanten Infos zu Ihrem Wahlkreiskandidaten!  Einfach eine Adresse eingeben oder Ihren Standort freigeben, und  schon springt der passende Pin in den entsprechenden Bezirk. Mit  einem Klick auf den Bezirk öffnet sich die Infobox, in der Sie  alles Wissenswerte über Ihren Kandidaten erfahren – inklusive des  Kandidaten-Flyers, den Sie sich direkt anschauen können. </p>
+
+<p>Sind Sie am Handy oder am Tablet? Dann nutzen Sie gerne unseren <a href="https://benjaminbleske.github.io/wahlkampfwahlbezirkskarte/" title="Direktlink zur Karte">Direktlink</a>. Beachten Sie, dass es Unschärfen im Bereich der Grenzen geben kann.</p></div><!-- CSS -->
 <style type="text/css">
 /* Container für das iframe */
   .responsive-iframe-container {

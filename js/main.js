@@ -72,7 +72,7 @@ function loadGeoJSON() {
  ${flyerUrl
   ? `<a href="${flyerUrl}" target="_blank" rel="noopener">
         <span style="display:inline-block;vertical-align:middle;">
-            📄 Flyer als PDF ansehen
+            📄 Kandidatenflyer ansehen
         </span>
      </a>`
   : ""}
